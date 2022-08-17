@@ -35,11 +35,25 @@ public class homePage {
         clickLink("JavaScript Alerts");
         return new alertsPage(driver);
     }
+    public wysiwygPage clickwysiwygLink(){
+        clickLink("WYSIWYG Editor");
+        return new wysiwygPage(driver);
+    }
+    public dyamicLoadingPage clickdynamicLink(){
+        clickLink("Dynamic Loading");
+        return new dyamicLoadingPage(driver);
+    }
     public uploadPage clickUploadLink(){
         clickLink("File Upload");
         return new uploadPage(driver);
     }
+    public largAndDeepPage clickLargeLink(){
+        clickLink("Large & Deep DOM");
+        return new largAndDeepPage(driver);
+    }
     public void clickLink(String link){
         driver.findElement(By.linkText(link)).click();
     }
+
+
 }
