@@ -18,6 +18,11 @@ public class waitTest extends baseTest {
     public  void testWait2(){
         DLExample2Page page = homePage.clickdynamicLink().clickExample2();
         page.clickStart();
-        assertEquals(page.getText(),"Hello World!","wrong text");
+        assertEquals(page.getText(),"Hello Wdorld!","wrong text");
+    }
+    @Test
+    public void testWaits() throws InterruptedException {
+        homePage.clickdynamicLink().clickExample2s();
+
     }
 }
